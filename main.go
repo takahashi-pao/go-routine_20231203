@@ -62,7 +62,7 @@ func add(
 			select {
 			case <-done:
 				return
-			case addCh <- i * addtive:
+			case addCh <- i + addtive:
 			}
 		}
 	}()
